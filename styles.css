@@ -72,6 +72,10 @@ a{
   font-weight: bold;
 }
 
+.userImg {
+  display: none;
+}
+
 .hero-section{
     position:relative;
     display:flex;
@@ -89,7 +93,7 @@ a{
     user-select:none;
     font-size: 7rem;
     color:rgb(231,231,231);
-    
+    z-index: -100;
     bottom: -18%;
     left: -5%;
     font-weight: bold;
@@ -499,7 +503,7 @@ a{
       width: 100%;
     }
     .project-sub-heading {
-      width: 100%;
+      width: 70%;
     }
     #project2 {
       margin-left: 0;
@@ -536,6 +540,7 @@ a{
 }
 .coding_platform {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
 }
@@ -546,7 +551,7 @@ a{
   align-items: center;
 }
 .codeLogo {
-  width: 48px;
+  width: 33px;
 }
 
 .skill-container-right{
@@ -567,6 +572,7 @@ a{
   right:-3%;
   user-select:none;
   overflow-y:hidden;
+  z-index: -100;
 }
 
 .blob-style{
@@ -760,7 +766,7 @@ footer{
   }
   .skill-fade-text {
     font-size: 9rem;
-    bottom: -25%;
+    bottom: -18%;
   }
   .Fcontainer {
     width: 96vw;
@@ -792,19 +798,32 @@ footer{
   .nav-items {
     display: none;
   }
+  .userImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  .userImg img {
+    width: 39px;
+    border-radius: 50%;
+  }
   .hero-section {
     margin: 3rem auto;
     padding: 0 0.6rem;
   }
   .faded-text {
     font-size: 2rem;
-    bottom: -27%;
+    bottom: -20%;
   }
   .hero-section-heading {
     font-size: 1rem;
   }
   .hero-section-sub-heading {
     font-size: 1.4rem;
+  }
+  .hero-section-left{
+   align-items: center;
   }
   .btn-pink {
     padding: 0.3rem 1rem;
